@@ -28,14 +28,16 @@ const generateHTML = (answers) =>
 inquirer
   .prompt([
     {
-      type: 'input',
+      type: 'checkbox',
       name: 'name',
       message: 'What is your name?',
+      choices: ['Angela', 'Jeff', 'Joe', 'Mike', 'Matt', 'Carlos'],
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'location',
       message: 'Where are you from?',
+      choices: ['USA', 'somewhere else']
     },
     {
       type: 'input',
